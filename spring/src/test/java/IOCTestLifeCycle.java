@@ -22,4 +22,12 @@ public class IOCTestLifeCycle {
         System.out.println("容器创建完成。。。。");
         annotationConfigApplicationContext.close();
     }
+
+    @Test
+    public void testJSR() {
+        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class);
+
+        System.out.println("容器创建完成");
+        annotationConfigApplicationContext.close();
+    }
 }

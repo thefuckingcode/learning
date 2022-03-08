@@ -1,13 +1,11 @@
 package org.example.config;
 
 import org.example.bean.Person;
-import org.example.service.BookService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
-import org.springframework.stereotype.Controller;
 
 @Configuration // 告诉Spring这是一个配置类
 //@ComponentScan(value = "org.example", excludeFilters = {

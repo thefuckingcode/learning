@@ -1,5 +1,8 @@
 package org.example.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car {
     public void init() {
         System.out.println("init");

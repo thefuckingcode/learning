@@ -59,7 +59,7 @@ public class IOCTest {
             System.out.println(beanDefinitionName);
         }
         // 工厂Bean获取的是调用getObject创建的对象
-//        System.out.println(annotationConfigApplicationContext.getBean("colorFactory"));
+        System.out.println(annotationConfigApplicationContext.getBean("colorFactory"));
 //        System.out.println(annotationConfigApplicationContext.getBean("colorFactory"));
 //        System.out.println(annotationConfigApplicationContext.getBean("colorFactory"));
 
