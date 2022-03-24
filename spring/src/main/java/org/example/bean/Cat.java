@@ -9,15 +9,15 @@ public class Cat implements InitializingBean, DisposableBean {
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("destroy");
+        System.out.println("cat destroy");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("init");
+        System.out.println("cat init");
     }
 
     public Cat() {
-        System.out.println("constructor");
+        System.out.println("cat constructor");
     }
 }

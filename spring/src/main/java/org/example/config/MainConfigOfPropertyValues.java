@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @PropertySource("classpath:/person.properties")
-@PropertySource("")
 @Configuration
 public class MainConfigOfPropertyValues {
 

@@ -11,13 +11,13 @@ public class Boss {
 
     private Cat cat;
 
-    //    @Autowired
+    @Autowired
     public Boss(Car car) {
         this.car = car;
         System.out.println("有参构造器");
     }
 
-    public Boss(Car car,Cat cat) {
+    public Boss(Car car, Cat cat) {
         this.car = car;
         this.cat = cat;
         System.out.println("有参构造器2");

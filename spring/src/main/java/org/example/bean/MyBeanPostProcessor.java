@@ -26,13 +26,17 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("postProcessBeforeInitialization..." + beanName + "=>" + beanName);
+        if (beanName.equals("cat")) {
+            System.out.println("postProcessBeforeInitialization..." + beanName + "=>" + beanName);
+        }
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("postProcessAfterInitialization..." + beanName + "=>" + beanName);
+        if (beanName.equals("cat")) {
+            System.out.println("postProcessAfterInitialization..." + beanName + "=>" + beanName);
+        }
         return bean;
     }
 }
